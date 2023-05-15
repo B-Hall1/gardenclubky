@@ -27,7 +27,7 @@
 
 <!-- home -->
 <section id="contact">
-    <h2 style="margin-top: 100px;">Contact Us</h2>
+    <h2 style="margin-top: 10px;">Contact Us</h2>
     <ul><li>To <a href="https://www.gardenclubky.org/headquarters/#rental">rent the Wallis House</a> for a tea, wedding, or other function, please call us at <a href="tel:8599876158">859-987-6158</a>.</li></ul>
     <ul><li>To report a death, please use the <a href="https://www.gardenclubky.org/contact-us/memoriam/">In Memoriam form</a></li></ul>
 
@@ -48,7 +48,7 @@
             <div class="input-group">
                 <label for="email">Email</label>
                 <br>
-                <input type="text" id="email" name="email" placeholder="Email">
+                <input type="text" id="email" name="email" placeholder="Email" required>
             </div>
             
             <div class="input-group">
@@ -98,11 +98,14 @@
             <option value="Membership">Membership</option>
             <option value="Scholarships">Scholarships</option>
             <option value="Website">Website</option>
+            <option value="Other">Other</option>
         </select>
         <br>
         <label for="message">Message</label>
         <br>
-        <textarea id="message" name="message" rows="5" cols="33">Message</textarea>
+        <textarea id="message" name="message" rows="5" cols="33" style="margin-bottom: 10px;" required>Message</textarea>
+
+       <button type="submit" form="form" value="Submit" style="margin-bottom: 10px;">Submit</button>
     </form>
     
     
@@ -113,5 +116,20 @@
 
 
 </body>
+
+<footer>
+    <ul class="social_icon">
+        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+    </ul>
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="members.html">Membership</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <p>@2023 Commonwealth Coders Spring</p>
+</footer>
 
 </html>
